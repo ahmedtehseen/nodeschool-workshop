@@ -1,0 +1,13 @@
+{
+  "name": "nodeschool-workshop",
+  "version": "1.0.0",
+  "description": "usage of URl and Query Params in nodejs",
+  "main": "app.js",
+  "repository": "https://github.com/ahmedtehseen/nodeschool-workshop.git",
+  "author": "ahmedtehseen <ahmedpisces7@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.0.12"
+  }
+}
