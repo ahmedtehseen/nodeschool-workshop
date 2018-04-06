@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "usage of URl and Query Params in nodejs",
   "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
   "repository": "https://github.com/ahmedtehseen/nodeschool-workshop.git",
   "author": "ahmedtehseen <ahmedpisces7@gmail.com>",
   "license": "MIT",
