@@ -14,15 +14,16 @@ export const createPost =	async (req, res) => {
 
 export const getAllPosts = async (req, res) => {
   const params = req.query;
+  console.log('Query Params Object:', params);
 	try {
-		return res.status(200).json({ posts: await Post.find({ ...check }) });
+		return res.status(200).json({ posts: await Post.find({ ...params }) });
 	} catch (e) {
 		return res.status(e.status).json({ error: true, message: 'Error with Post' });
 	}
 }
 
 export const getPost = async (req, res) => {
-  console.log('params object:', req.params)
+  console.log('URL Params Object:', req.params)
   const { id } = req.params
   try {
     return res.status(200).json({ posts: await Post.find({ _id: id }) });
